@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2f6;
+    color: #1e293b;
+    padding: 25px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-collapse: collapse;
+    /* Strong outer frame around the entire table */
+    border: 3px solid #0f172a;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+}
+
+caption {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 12px;
+    color: #0f172a;
+}
+
+/* Clear, crisp grid lines on every cell */
+th, td {
+    border: 2px solid #475569;
+    padding: 12px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    vertical-align: middle;
+}
+
+/* Header row styling with thick bottom divider */
+thead th {
+    background-color: #0f172a;
+    color: #ffffff;
+    border: 2px solid #334155;
+    border-bottom: 3px solid #0f172a;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Time column styling with thick right divider */
+tbody th {
+    background-color: #cbd5e1;
+    color: #0f172a;
+    font-weight: bold;
+    width: 165px;
+    border-right: 3px solid #0f172a;
+}
+
+/* Footer row styling with thick top divider */
+tfoot td {
+    background-color: #0f172a;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 14px;
+    border-top: 3px solid #0f172a;
+}
+
+/* Color-coded categories */
+.sleep { background-color: #e0e7ff; color: #1e1b4b; }
+.routine { background-color: #f8fafc; color: #334155; }
+.work { background-color: #dbeafe; color: #1e3a8a; }
+.study { background-color: #fef3c7; color: #78350f; }
+.meal { background-color: #dcfce7; color: #14532d; }
+.fitness { background-color: #ffedd5; color: #7c2d12; }
+.personal { background-color: #f3e8ff; color: #4c1d95; }
+.leisure { background-color: #fce7f3; color: #831843; }
+
+tbody td:hover {
+    filter: brightness(0.94);
+    transition: 0.15s ease;
+}
